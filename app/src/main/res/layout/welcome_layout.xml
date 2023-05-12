@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="@drawable/welcome_img"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+    </View>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+
+        >
+        <ImageButton
+            android:id="@+id/login_by_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="34dp"
+            android:src="@drawable/button1"
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"
+            android:radius="15dp"/>
+
+
+        <ImageButton
+            android:id="@+id/login_by_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:padding="34dp"
+            android:src="@drawable/button2"
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"
+            android:radius="15dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
