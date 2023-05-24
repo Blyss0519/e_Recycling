@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 地图视图 -->
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp" />
+
+        <!-- 圆角悬浮窗布局 -->
+        <LinearLayout
+            android:id="@+id/floatingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_background"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_margin="16dp"
+            android:layout_alignParentBottom="true">
+
+            <!-- 第一行：Near Stations Number -->
+            <TextView
+                android:id="@+id/nearStationsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Near Stations Number:"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp" />
+
+            <!-- 第二行：具体数字 -->
+            <TextView
+                android:id="@+id/nearStationsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No.5"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 第三行：The Nearest One -->
+            <TextView
+                android:id="@+id/nearestLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Nearest One:"
+                android:textSize="16sp"
+                android:textColor="#0000FF"
+                android:layout_gravity="center" />
+
+            <!-- 第四行：具体地点名称 -->
+            <TextView
+                android:id="@+id/nearestLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fuzhou University"
+                android:textSize="18sp"
+                android:textColor="#0000FF"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 第五行：按钮布局 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- "Let's Go" 按钮 -->
+                <Button
+                    android:id="@+id/letsGoButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Let's Go"
+                    android:textSize="18sp"
+                    android:background="@drawable/rounded_button_background"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="4dp" />
+
+                <!-- "Pickup & Delivery" 按钮 -->
+                <Button
+                    android:id="@+id/pickupDeliveryButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pickup &amp; Delivery"
+                    android:textSize="16sp"
+                    android:background="@drawable/rounded_button_background"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="4dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
