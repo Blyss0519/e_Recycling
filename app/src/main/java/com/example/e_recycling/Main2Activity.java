@@ -14,7 +14,6 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -23,11 +22,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main2Activity extends AppCompatActivity {
-    public static final int TAKE_PHOTO=1;
-    private ImageView picture;
-    public static final int CHOOSE_PHOTO=2;
-    private Uri imageUri;
     private List<Tag> tagList=new ArrayList<>();
+    public static final int TAKE_PHOTO=1;
+    private Uri imageUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
