@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
     //启动WelcomeActivity
     public void getWelcome(){
-//        Intent intent=new Intent(MainActivity.this,Main2Activity.class);
-        Intent intent=new Intent(MainActivity.this,WelcomeActivity.class);
+        Intent intent=new Intent(MainActivity.this, PersonalCenterActivity.class);
+//        Intent intent=new Intent(MainActivity.this,WelcomeActivity.class);
         startActivity(intent);
         finish();
     }
